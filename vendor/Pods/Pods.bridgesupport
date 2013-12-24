@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<enum name='YouTubeThumbnailDefault' value='0'/>
+<enum name='YouTubeThumbnailDefaultHighQuality' value='2'/>
+<enum name='YouTubeThumbnailDefaultMaxQuality' value='3'/>
+<enum name='YouTubeThumbnailDefaultMedium' value='1'/>
+<class name='HCYoutubeParser'>
+<method class_method='true' selector='detailsForYouTubeURL:completeBlock:'>
+<arg declared_type='NSURL*' index='0' name='youtubeURL' type='@'/>
+<arg declared_type='void (^)(NSDictionary *, NSError *)' function_pointer='true' index='1' name='completeBlock' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='h264videosWithYoutubeID:'>
+<arg declared_type='NSString*' index='0' name='youtubeID' type='@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method class_method='true' selector='h264videosWithYoutubeURL:'>
+<arg declared_type='NSURL*' index='0' name='youtubeURL' type='@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method class_method='true' selector='h264videosWithYoutubeURL:completeBlock:'>
+<arg declared_type='NSURL*' index='0' name='youtubeURL' type='@'/>
+<arg declared_type='void (^)(NSDictionary *, NSError *)' function_pointer='true' index='1' name='completeBlock' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='thumbnailForYoutubeID:thumbnailSize:completeBlock:'>
+<arg declared_type='NSString*' index='0' name='youtubeID' type='@'/>
+<arg declared_type='YouTubeThumbnail' index='1' name='thumbnailSize' type='i'/>
+<arg declared_type='void (^)(UIImage *, NSError *)' function_pointer='true' index='2' name='completeBlock' type='@?'>
+<arg declared_type='UIImage*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='thumbnailForYoutubeURL:thumbnailSize:completeBlock:'>
+<arg declared_type='NSURL*' index='0' name='youtubeURL' type='@'/>
+<arg declared_type='YouTubeThumbnail' index='1' name='thumbnailSize' type='i'/>
+<arg declared_type='void (^)(UIImage *, NSError *)' function_pointer='true' index='2' name='completeBlock' type='@?'>
+<arg declared_type='UIImage*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='youtubeIDFromYoutubeURL:'>
+<arg declared_type='NSURL*' index='0' name='youtubeURL' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+</signatures>
